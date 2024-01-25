@@ -1,0 +1,21 @@
+classdef (Abstract) Robots<MobileObjects
+    %ROBOTS Summary of this class goes here
+    %   Detailed explanation goes here
+    
+    properties
+     Battery_Level
+     Icon=imresize(imread("robot-icon.png"),50,50);
+    end
+    
+    methods 
+        function Display(obj)
+            h=obj.Tag;
+            set(h,"Postion",x[])
+        end
+        function Create(obj)
+           icon=obj.Icon;
+           image('XData',[obj.Loc(1)   obj.Loc:size(icon,2)+1])
+        end
+    end
+end
+

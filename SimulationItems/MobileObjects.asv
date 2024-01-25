@@ -1,0 +1,20 @@
+classdef (Abstract) MobileObjects<DataHandler
+    %This class contains the all mobile objects in the LunarBase software
+    properties
+       Speed
+       Target
+       CurrentTask
+       Tasklist
+       Tools
+       Status
+       Mode
+       InRIcon=imresize(imread("Robot3.png"),[50 50]);
+       
+    end
+
+    methods
+        function obj=CreateGraphics
+
+        
+    end
+end
